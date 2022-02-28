@@ -13,7 +13,7 @@ This action is intended to run on PR merge. It performs a semantic-release, then
 <!-- start usage -->
 
 ```yaml
-- uses: tnlcommunity/action-release-update-chart@undefined
+- uses: TnLCommunity/action-release-update-chart@undefined
   with:
     # Github token to use, this should be a PAT so that it can trigger workflows on
     # the destination helm repository
@@ -54,7 +54,7 @@ This action is intended to run on PR merge. It performs a semantic-release, then
 | **Input**              | **Description**                                                                                               |                                **Default**                                 | **Required** |
 | :--------------------- | :------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------: | :----------: |
 | **`token`**            | Github token to use, this should be a PAT so that it can trigger workflows on the destination helm repository |                                                                            |   **true**   |
-| **`release-config`**   | semantic-release release configuration to use                                                                 |                     `@tnlcommunity/release-config-general`                     |  **false**   |
+| **`release-config`**   | semantic-release release configuration to use                                                                 |                   `@tnlcommunity/release-config-general`                   |  **false**   |
 | **`helm-repo`**        | The helm chart git repo to update                                                                             | `${{ github.repository_owner }}/chart-${{ github.event.repository.name }}` |  **false**   |
 | **`helm-repo-branch`** | The helm chart git repo to branch from and PR into                                                            |                                  `alpha`                                   |  **false**   |
 | **`path-to-chart`**    | The path to the helm chart in the helm git repo                                                               |                                  `chart`                                   |  **false**   |
