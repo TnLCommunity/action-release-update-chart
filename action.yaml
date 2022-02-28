@@ -1,4 +1,4 @@
-name: 'Release and Update Chart' #
+name: 'Release and Update Chart'
 description: 'This action is intended to run on PR merge. It performs a semantic-release, then creates a PR into a helm chart repository with an updated appVersion, using the same PR title and body as the PR that triggered the workflow'
 inputs:
   token:
